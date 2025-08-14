@@ -1,39 +1,93 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-    <title>ECONOMY</title>
+    <title>PERFORMANCE TASK #2</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        /* Header */
+        h1 {
+            text-align: center;
+            background-color: #ffb3c6;
+            padding: 15px;
+            color: #4a0e2e;
+            margin: 0;
+        }
+        /* Navigation bar */
+        .navbar {
+            text-align: center;
+            background-color: #ffd6e0;
+            padding: 12px;
+        }
+        /* Main menu links */
+        .navbar a.menu-link {
+            position: relative;
+            font-size: 18px;
+            padding: 8px 15px;
+            text-decoration: none;
+            color: #4a0e2e;
+            background-color: white;
+            border-radius: 20px;
+            margin: 0 8px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        /* Underline animation */
+        .navbar a.menu-link::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: #ff4f81;
+            left: 50%;
+            bottom: -5px;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        .navbar a.menu-link:hover::after {
+            width: 60%;
+        }
+        .navbar a.menu-link:hover {
+            color: #ff4f81;
+        }
+    </style>
 </head>
-<body bgcolor="white">
-    <br>
-    <h1 style="text-align: center;">STAND ALONE SENIOR HIGH SCHOOL - TIS</h1>
-    <hr color="black" size="3" width="100%">
-    <br>
+<body>
+    <!-- Header -->
+    <h1>SCIENCE CLUB - TAGUIG NATIONAL HIGH SCHOOL</h1>
 
-    <font face="Times New Roman" 
-        <hr>
-        <hr>
-        <font size="4.5" color="black"><a href="index.htm">Home</a>&nbsp;
-        <font size="4.5" color="black"><a href="HO2.htm">Activity</a>&nbsp;
-        <font size="4.5" color="black"><a href="HO3.htm">Gallery</a>&nbsp;
-        <font size="4.5" color="black">Contacts</font>
-        <hr>
- 
-        <center>
-        <br>
-        <img src="deped.jpg" width="24%" height="23%">&nbsp;&nbsp;
-        <img src="Stand.jpg" width="42%" height="40%">&nbsp;&nbsp;
-        <img src="standalone.jpg" width="25%" height="24%">
-        <br>
-            
-        <br>
-        <b>DESCRIPTION:</b> A STAND - Alone Senior High school (SHS) is a secondary school that operates independently from a Junior High School (JHS) or Integrated School (IS).
-        <br>  
-        <br>
-        <hr>    
+    <!-- Navigation Links -->
+    <div class="navbar">
+        <a href="index.htm" class="menu-link">Home</a>
+        <a href="Events.html" class="menu-link">Events</a>
+        <a href="blog.html" class="menu-link">Blog</a>
+
+        <!-- Sign Up & Log In Buttons (unchanged) -->
+        <a href="ptform.html" style="font-size: 18px; margin: 0 15px; padding: 5px 10px; background-color: #ff4f81; color: white; border-radius: 5px; text-decoration: none;">Sign Up</a>
+        <a href="login.html" style="font-size: 18px; margin: 0 15px; padding: 5px 10px; background-color: #ff4f81; color: white; border-radius: 5px; text-decoration: none;">Log In</a>
+    </div>
+
+    <hr width="30%" color="black">
+
+    <!-- Logo and Description -->
+    <div style="text-align: center;">
+        <img src="club.jpg" width="50%" alt="Science Club Logo" style="border-radius: 8px;"><br><br>
+        <b>
+            Our brand-new Science department logo is a powerful emblem that encapsulates our commitment
+            to academic excellence and the profound journey of scientific discovery. Join us as we embark
+            on a journey of academic excellence, scientific exploration, and technological advancement!
+        </b>
+    </div>
+
+    <hr width="30%" color="black">
+
+    <!-- Footer -->
+    <div style="text-align: center; background-color: #ffd6e0; padding: 10px;">
         <b>NAME:</b> Jhabar Bongaros<br>
         <b>GRADE & SECTION:</b> 11 - Economy
-   
-        
+    </div>
 </body>
 </html>
